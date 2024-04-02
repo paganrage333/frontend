@@ -24,7 +24,7 @@ class JoblyApi {
             : {};
 
         try {
-            console.log("SIGNUP", url, method, data, params )
+            console.log("SIGNUP", url, method)
             return (await axios({ url, method, data, params, headers })).data;
         } catch (err) {
             console.error("API Error:", err.response);
